@@ -12,5 +12,7 @@
     npm install tailwindcss @tailwindcss/vite
 
 npm i three
+npm i @react-three/drei
+
 
  -->
