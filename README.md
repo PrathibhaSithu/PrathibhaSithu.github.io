@@ -9,5 +9,7 @@
     npm install
     npm run dev
 
-    
+    npm install tailwindcss @tailwindcss/vite
+
+
  -->
