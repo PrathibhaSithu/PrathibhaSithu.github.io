@@ -23,6 +23,25 @@ export default function MainBackground() {
         const starField = new THREE.Points(starGeometry, starMaterial);
         scene.add(starField);
 
+        const handleMouseMove = (event) => {
+            const mouseX = (event.clientX / window.innerWidth) * 2 -1;
+            const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+            starField.rotation.x += mouseY * 0.01;
+            starField.rotation.y += mouseX * 0.01;
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+
+        const handleResize = () => {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+        };
+
+        window.addEventListener('resize', handleResize);
+
     })
   return (
     <div>MainBackground</div>
