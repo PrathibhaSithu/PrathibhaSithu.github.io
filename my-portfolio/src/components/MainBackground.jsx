@@ -42,8 +42,21 @@ export default function MainBackground() {
 
         window.addEventListener('resize', handleResize);
 
-    })
+        const animate = () => {
+            requestAnimationFrame(animate);
+            starField.rotation.y += 0.001;
+            starField.rotation.x += 0.001;
+            renderer.render(scene, camera);
+        };
+
+        animate();
+
+    }, []);
+
   return (
-    <div>MainBackground</div>
+    <div
+        ref={mountRef}
+        className='fixed inset-0 -z-1 w-full h-full'
+    />
   );
 }
