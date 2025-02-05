@@ -11,5 +11,6 @@
 
     npm install tailwindcss @tailwindcss/vite
 
+npm i three
 
  -->
