@@ -11,10 +11,10 @@
 
     npm install tailwindcss @tailwindcss/vite
 
-npm i three
-npm i @react-three/drei
-npm i @react-three/fiber
-npm i @react-three/postprocessing
-npm i framer-motion
-npm i countup
+    npm i three
+    npm i @react-three/drei
+    npm i @react-three/fiber
+    npm i @react-three/postprocessing
+    npm i framer-motion
+    npm i countup
  -->
