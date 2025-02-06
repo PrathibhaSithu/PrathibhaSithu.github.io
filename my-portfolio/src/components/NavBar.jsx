@@ -54,6 +54,21 @@ export default function NavBar() {
         ])
     },[isOpen, animate]);
 
+    const handleNavItemClick = (sectionId) => {
+        setIsOpen(false);
+        document.getElementById(sectionId)?.scrollIntoView(
+            {
+                behavior: 'smooth',
+                block: 'start',
+            });
+    };
+
+    const NavItems = [
+        {id: 'about', name: 'About'},
+        {id: 'projects', name: 'Projects'},
+        {id: 'contact', name: 'Contact'},
+    ]
+
     return(
         <div className="nav-bar">NavBar</div>
     )
