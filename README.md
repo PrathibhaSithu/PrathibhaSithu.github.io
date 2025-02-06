@@ -2,18 +2,62 @@
 
 <!-- https://www.youtube.com/watch?v=tTVrw4vbfX0 -->
 
-<!-- 
-    npm create vite@latest my-portfolio -- --template react
+## 🚀 Setup & Usage  
 
-    cd my-portfolio
+1. Clone the repository:  
+   ```bash
+   git clone code
+   
+   ```
+2. Enter to Project
+   ```
+   cd Hovering-Stars
+
+   ```
+3. Install Dependencies
+    ```
     npm install
-    npm run dev
 
+    ```
+4. Install Tailwind Css
+    ```
     npm install tailwindcss @tailwindcss/vite
 
-npm i three
-npm i @react-three/drei
-npm i @react-three/fiber
-npm i @react-three/postprocessing
-npm i framer-motion
- -->
+    ```
+5. Install Three.js
+    ```
+    npm i three
+
+    ```
+6. Install React Three drei 
+    ```
+    npm i @react-three/drei
+    
+    ```
+7. Install React Fiber
+    ```
+    npm i @react-three/fiber
+
+    ```
+8. Install React Postprocessing
+    ```
+    npm i @react-three/postprocessing
+    
+    ```
+9. Install Framer Motion
+    ```
+    npm i framer-motion
+    
+    ```
+10. Install CountUp.js (for animations) 
+    ```
+    npm i countup
+
+    ```
+11. Run the Development Server
+    ```
+    npm run dev
+
+    ```
+
+## ⭐ If you like this project, don't forget to star the repository! ⭐    
