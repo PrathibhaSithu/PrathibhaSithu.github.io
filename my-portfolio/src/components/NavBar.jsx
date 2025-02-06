@@ -15,7 +15,8 @@ export default function NavBar() {
     useEffect(() => {
         const menuAnimation = isOpen ? [
             'nav',
-            {transform: 'translateX(0%)'},
+            {transform: "translateX(0%)"},
+            {ease:[0.08, 0.65, 0.53, 0.96]}
         ]
     })
 
