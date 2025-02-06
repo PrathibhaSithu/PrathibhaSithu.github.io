@@ -11,7 +11,7 @@
    ```
 2. Enter to Project
    ```
-   cd Hovering-Stars
+   cd my-portfolio
 
    ```
 3. Install Dependencies
