@@ -67,6 +67,7 @@ export default function NavBar() {
         {id: 'about', name: 'About'},
         {id: 'projects', name: 'Projects'},
         {id: 'contact', name: 'Contact'},
+        // home about skills services projects other projects contact
     ]
 
     return(
