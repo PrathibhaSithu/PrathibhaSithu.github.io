@@ -1,5 +1,6 @@
 // import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { variants } from "./data/config";
 
 function HeroSection() {
   return (
@@ -30,26 +31,26 @@ function HeroSection() {
               qui animi! Vel eaque odio voluptatem iste!
             </p>
             <section className="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
-                <figure className="w-56">
-                    <button>Hire Me</button>
-                </figure>
-                <motion.button
-                    whileHover={{scale:1.1}}
-                    className="flex items-center px-4 py-2 bg-transparent text-[#A35EA0] border border-[#A35EA0] rounded-3xl"
-                >
-                    <svg viewBox="0 0 24 24" width={40} height={40}>
-                        <motion.path 
-                            d= 'M12 15.58614.95-4.95-1.414L13 12.172V4h-2v8.172L8.464 9.636 7.05 11.05 12 15.586zm-7 2h14v2H5v-2z'
-                            fill='#ffc107'
-                            stroke='#ffc107'
-                            strokeWidth={0.5}
-                            variants={variants}
-                            initial="initial"
-                            animate="animate"
-                        />
-                    </svg>
-                    <span>Download Resume</span>
-                </motion.button>
+              <figure className="w-56">
+                <button>Hire Me</button>
+              </figure>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                className="flex items-center px-4 py-2 bg-transparent text-[#A35EA0] border border-[#A35EA0] rounded-3xl"
+              >
+                <svg viewBox="0 0 24 24" width={40} height={40}>
+                  <motion.path
+                    d="M12 15.58614.95-4.95-1.414L13 12.172V4h-2v8.172L8.464 9.636 7.05 11.05 12 15.586zm-7 2h14v2H5v-2z"
+                    fill="#ffc107"
+                    stroke="#ffc107"
+                    strokeWidth={0.5}
+                    variants={variants}
+                    initial="initial"
+                    animate="animate"
+                  />
+                </svg>
+                <span>Download Resume</span>
+              </motion.button>
             </section>
           </section>
         </article>
