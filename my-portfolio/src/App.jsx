@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-    <div className="bg-[#0d0d0d]">
+    <div className="bg-[#d2a8d6]">
       <NavBar/>
     </div>
       {/* <MainBackground/> */}
