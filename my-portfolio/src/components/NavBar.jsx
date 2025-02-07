@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useAnimate, stagger, motion } from "framer-motion";
+import { useAnimate, stagger } from "framer-motion";
 
 const Path = (props) => {
     <Path
@@ -74,7 +74,7 @@ export default function NavBar() {
         {id: 'projects', text: 'Projects'},
         {id: 'extraActivities', text: 'Activities'},
         {id: 'contact', text: 'Contact'},      
-    ]
+    ];
 
     return(
         <div className="relative flex justify-between px-12 py-2">
