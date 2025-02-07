@@ -74,6 +74,36 @@ export default function NavBar() {
     ]
 
     return(
-        <div className="relative flex justify-between"></div>
-    )
+        <div className="relative flex justify-between px-12 py-2">
+            <div ref={scope} className="relative">
+                <button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="absolute top-4 z-40 left-4 w-12 h-12 rounded-full bg-gradient-to-br from-[#ffc107] to-[#ff18b8] 
+                    flex items-center justify-center"
+                >
+                    <svg width={23} height={18} viewBox="0 0 23 18">
+                        <path d="M 2 2.5 L 20 2.5" className="top-0" />
+                        <path d="M 2 9.423 L 20 9.423" opacity='1' className="align-middle" />
+                        <path d="M 2 16.346 L 20 16.346" className="bottom" />
+                    </svg>
+                </button>
+                <nav className={`fixed top-0 left-0 h-full w-72 z-30 flex items-center bg-gradient-to-br from-[#ffc107] to-[#ff18b8] transform 
+                    ${ isOpen ? 'translate-x-0' : '-translate-x-full'
+                    } transition-transform duration-300 
+                `}>
+                    <ul className="flex flex-col p-6">
+                        {NavItems.map((item) => (
+                            <li key={item.id} className="text-white text-4xl front-bold mt-10">
+                                <a href={`#${item.id}`}
+                                onClick={() => handleNavItemClick(item.id)}
+                                >
+                                    {item.text}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    );
 }
