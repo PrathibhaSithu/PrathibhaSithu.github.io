@@ -15,7 +15,7 @@ export const variants = {
       },
       fillOpacity: {
         delay: animationDuration,
-      },
-    },
-  },
+      }
+    }
+  }
 };
