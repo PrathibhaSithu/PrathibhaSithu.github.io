@@ -1,12 +1,15 @@
-import MainBackground from "./components/MainBackground";
+// import MainBackground from "./components/MainBackground";
 import NavBar from "./components/NavBar";
 
 function App() {
 
   return (
     <>
-      <MainBackground/>
+    <div className="bg-[#0d0d0d]">
       <NavBar/>
+    </div>
+      {/* <MainBackground/> */}
+      
     </>
   );
 }

@@ -80,7 +80,7 @@ export default function NavBar() {
             <div ref={scope} className="relative">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="absolute top-4 z-40 left-4 w-12 h-12 rounded-full bg-gradient-to-br from-[#ffc107] to-[#ff18b8] 
+                    className="absolute top-4 z-40 left-4 w-12 h-12 rounded-full bg-gradient-to-br from-[#F5F5F5] to-[#00FFFF] 
                     flex items-center justify-center"
                 >
                     <svg width={23} height={18} viewBox="0 0 23 18">
