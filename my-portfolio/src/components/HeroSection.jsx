@@ -40,7 +40,7 @@ function HeroSection() {
               >
                 <svg viewBox="0 0 24 24" width={40} height={40}>
                   <motion.path
-                    d="M12 15.58614.95-4.95-1.414L13 12.172V4h-2v8.172L8.464 9.636 7.05 11.05 12 15.586zm-7 2h14v2H5v-2z"
+                    d="M12 15.58614.95-4.95-1.414-1.414L13 12.172V4h-2v8.172L8.464 9.636 7.05 11.05 12 15.586zm-7 2h14v2H5v-2z"
                     fill="#ffc107"
                     stroke="#ffc107"
                     strokeWidth={0.5}
