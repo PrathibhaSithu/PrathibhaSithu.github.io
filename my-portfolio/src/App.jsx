@@ -8,7 +8,8 @@ function App() {
     <div className="bg-[#f4e1e6]">
       <NavBar/>
     </div>
-      {/* <MainBackground/> */}
+      {/* <MainBackground/>
+      <NavBar/> */}
       
     </>
   );
