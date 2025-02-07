@@ -99,11 +99,3 @@ export default function MainBackground() {
 
     return <div ref={mountRef} className="fixed inset-0 -z-1 w-full h-full bg-[#0d0d0d]" />;
 }
-
-
-
-
-
-
-
-
