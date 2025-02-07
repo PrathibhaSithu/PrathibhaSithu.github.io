@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useAnimate, stagger, motion } from "framer-motion";
 
-const Path = (props) => (
+const Path = (props) => {
     <motion.path
         fill="transparent"
         strokeWidth="3"
@@ -9,7 +9,7 @@ const Path = (props) => (
         strokeLinecap="round"
         {...props}
     />
-);
+};
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
