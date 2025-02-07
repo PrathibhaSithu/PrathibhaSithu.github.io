@@ -18,13 +18,13 @@ function HeroSection() {
           <section className="ml-0 md:ml-12">
             <header className="text-center lg:text-left">
               <h1 className="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
-                Hello, I am
-                <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#A35EA0] to-[#D2A8D6]">
+                Hello, I am 
+                <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#F4E1E6] to-[#F6C6D7]">
                   Prathibha
                 </span>
               </h1>
             </header>
-            <p className="text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
+            <p className="text-[#fff] pt-8 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
               cumque architecto non molestiae voluptate doloribus! Pariatur
               provident blanditiis necessitatibus. Explicabo vitae iusto libero
@@ -32,11 +32,11 @@ function HeroSection() {
             </p>
             <section className="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
               <figure className="w-56">
-                <button>Hire Me</button>
+                <button className="text-[#F4E1E6] font-medium">Hire Me</button>
               </figure>
               <motion.button
                 whileHover={{ scale: 1.1 }}
-                className="flex items-center px-4 py-2 bg-transparent text-[#A35EA0] border border-[#A35EA0] rounded-3xl"
+                className="flex items-center px-4 py-2 bg-transparent font-bold text-[#fff] border border-[#F7A1B2] rounded-3xl"
               >
                 <svg viewBox="0 0 24 24" width={40} height={40}>
                   <motion.path
@@ -58,3 +58,5 @@ function HeroSection() {
     </section>
   );
 }
+
+export default HeroSection;
