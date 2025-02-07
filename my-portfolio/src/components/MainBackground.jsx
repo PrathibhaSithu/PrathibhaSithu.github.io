@@ -57,7 +57,7 @@ export default function MainBackground() {
         // Add a glass-like plane in front of the flowers
         const glassGeometry = new THREE.PlaneGeometry(40, 20); // Adjust size to cover the screen
         const glassMaterial = new THREE.MeshBasicMaterial({
-            color: 0xffffff,
+            color: 0xfff,
             transparent: true,
             opacity: 0.01, // Semi-transparent
         });
