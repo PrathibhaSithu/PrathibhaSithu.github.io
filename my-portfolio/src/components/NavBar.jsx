@@ -64,10 +64,13 @@ export default function NavBar() {
     };
 
     const NavItems = [
-        {id: 'about', name: 'About'},
-        {id: 'projects', name: 'Projects'},
-        {id: 'contact', name: 'Contact'},
-        // home about skills services projects other projects contact
+        {id: 'home', text: 'Home'},
+        {id: 'about', text: ''},
+        {id: 'skills', text: ''},
+        {id: 'services', text: ''},
+        {id: 'projects', text: ''},
+        {id: 'extraActivities', text: ''},
+        {id: 'contact', text: ''},      
     ]
 
     return(
