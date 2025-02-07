@@ -1,5 +1,8 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
+import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
+import { BokehPass } from 'three/examples/jsm/postprocessing/BokehPass'; // For depth-of-field blur
 import flower1 from '../assets/background/flower.png';
 import flower2 from '../assets/background/flower2.png';
 import flower3 from '../assets/background/flower3.png';
@@ -15,7 +18,6 @@ export default function MainBackground() {
         const renderer = new THREE.WebGLRenderer({ alpha: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         mountRef.current.appendChild(renderer.domElement);
-
         camera.position.z = 20;
 
         // Load flower textures
@@ -29,37 +31,52 @@ export default function MainBackground() {
 
         const flowerCount = 100;
         const flowers = [];
-
-        const getRandomPosition = () => {
-            const aspectRatio = window.innerWidth / window.innerHeight;
-            return {
-                x: (Math.random() - 0.5) * aspectRatio * 40, // Spread based on screen width
-                y: Math.random() * 15 + 5, // Start above the screen
-                z: (Math.random() - 0.5) * 40, // More scattered depth
-            };
-        };
+        const getRandomPosition = () => ({
+            x: (Math.random() - 0.5) * 40,
+            y: Math.random() * 15 + 5,
+            z: (Math.random() - 0.5) * 40,
+        });
 
         for (let i = 0; i < flowerCount; i++) {
             const material = new THREE.SpriteMaterial({
                 map: flowerTextures[Math.floor(Math.random() * flowerTextures.length)],
                 transparent: true,
             });
-
             const flower = new THREE.Sprite(material);
-            flower.scale.setScalar(Math.random() * 0.3 + 0.1); // Random size
-
-            // Random starting position
+            flower.scale.setScalar(Math.random() * 0.3 + 0.1);
             const pos = getRandomPosition();
             flower.position.set(pos.x, pos.y, pos.z);
-
             flower.userData = {
                 velocity: Math.random() * 0.05 + 0.02,
                 rotationSpeed: (Math.random() - 0.5) * 0.02,
             };
-
             scene.add(flower);
             flowers.push(flower);
         }
+
+        // Add a glass-like plane in front of the flowers
+        const glassGeometry = new THREE.PlaneGeometry(40, 20); // Adjust size to cover the screen
+        const glassMaterial = new THREE.MeshBasicMaterial({
+            color: 0xffffff,
+            transparent: true,
+            opacity: 0.01, // Semi-transparent
+        });
+        const glassPlane = new THREE.Mesh(glassGeometry, glassMaterial);
+        glassPlane.position.z = -1; // Place it slightly in front of the flowers
+        scene.add(glassPlane);
+
+        // Set up post-processing
+        const composer = new EffectComposer(renderer);
+        const renderPass = new RenderPass(scene, camera);
+        composer.addPass(renderPass);
+
+        // Add BokehPass for blur effect
+        const bokehPass = new BokehPass(scene, camera, {
+            focus: 10, // Distance where objects are in focus
+            aperture: 0.01, // Strength of the blur
+            maxblur: 0.01, // Maximum blur intensity
+        });
+        composer.addPass(bokehPass);
 
         // Handle resizing
         const handleResize = () => {
@@ -68,25 +85,25 @@ export default function MainBackground() {
             renderer.setSize(width, height);
             camera.aspect = width / height;
             camera.updateProjectionMatrix();
+            composer.setSize(width, height); // Update composer size
         };
-
         window.addEventListener('resize', handleResize);
 
         // Animation loop
         const animate = () => {
             requestAnimationFrame(animate);
-            flowers.forEach(flower => {
+
+            flowers.forEach((flower) => {
                 flower.position.y -= flower.userData.velocity;
                 flower.rotation.z += flower.userData.rotationSpeed;
 
-                // Reset flower when it falls below the screen
                 if (flower.position.y < -10) {
                     const pos = getRandomPosition();
                     flower.position.set(pos.x, pos.y, pos.z);
                 }
             });
 
-            renderer.render(scene, camera);
+            composer.render(); // Use composer instead of renderer.render()
         };
 
         animate();
