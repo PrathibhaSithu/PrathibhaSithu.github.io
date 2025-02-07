@@ -18,7 +18,7 @@ function HeroSection() {
           <section className="ml-0 md:ml-12">
             <header className="text-center lg:text-left">
               <h1 className="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
-                Hello, I am 
+                Hello, I am{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#F4E1E6] to-[#F6C6D7]">
                   Prathibha
                 </span>
