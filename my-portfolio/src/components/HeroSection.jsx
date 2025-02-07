@@ -36,13 +36,14 @@ function HeroSection() {
               </figure>
               <motion.button
                 whileHover={{ scale: 1.1 }}
-                className="flex items-center px-4 py-2 bg-transparent font-bold text-[#fff] border border-[#F7A1B2] rounded-3xl"
+                className="flex items-center px-4 py-2 bg-transparent font-bold text-[#fff] border-3 border-[#fff]
+                    bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 rounded-3xl"
               >
-                <svg viewBox="0 0 24 24" width={40} height={40}>
+                <svg viewBox="0 0 24 24" width={40} height={40} fill="none">
                   <motion.path
-                    d="M12 15.58614.95-4.95-1.414-1.414L13 12.172V4h-2v8.172L8.464 9.636 7.05 11.05 12 15.586zm-7 2h14v2H5v-2z"
-                    fill="#ffc107"
-                    stroke="#ffc107"
+                    d="M12 16l4-4h-3V4h-2v8H8l4 4zM5 20h14v2H5z"
+                    fill="#FFFFFF"
+                    stroke="#FFFFFF"
                     strokeWidth={0.5}
                     variants={variants}
                     initial="initial"
