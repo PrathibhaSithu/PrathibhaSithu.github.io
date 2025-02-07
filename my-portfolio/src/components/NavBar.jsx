@@ -65,15 +65,15 @@ export default function NavBar() {
 
     const NavItems = [
         {id: 'home', text: 'Home'},
-        {id: 'about', text: ''},
-        {id: 'skills', text: ''},
-        {id: 'services', text: ''},
-        {id: 'projects', text: ''},
-        {id: 'extraActivities', text: ''},
-        {id: 'contact', text: ''},      
+        {id: 'about', text: 'About'},
+        {id: 'skills', text: 'Skills'},
+        {id: 'services', text: 'Services'},
+        {id: 'projects', text: 'Projects'},
+        {id: 'extraActivities', text: 'Activities'},
+        {id: 'contact', text: 'Contact'},      
     ]
 
     return(
-        <div className="nav-bar">NavBar</div>
+        <div>NavBar</div>
     )
 }
