@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useAnimate, stagger, motion } from "framer-motion";
 
-const Path = (props) => {
+const Path = (props) => (
     <motion.path
         fill="transparent"
         strokeWidth="3"
@@ -9,7 +9,7 @@ const Path = (props) => {
         strokeLinecap="round"
         {...props}
     />
-};
+);
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +47,10 @@ export default function NavBar() {
                 { d: isOpen ? "M 3 16.5 L 17 2.5" : "M 2 2.5 L 20 2.5" },
                 { at: "<" },
             ],
-            ["path.middle", { opacity: isOpen ? 0 : 1 }, { at: "<" }],
+            [
+                "path.middle", 
+                { opacity: isOpen ? 0 : 1 }, 
+                { at: "<" }],
             [
                 "path.bottom",
                 { d: isOpen ? "M 3 2.5 L 17 16.346" : "M 2 16.346 L 20 16.346" },
@@ -80,7 +83,7 @@ export default function NavBar() {
             <div ref={scope} className="relative">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="absolute top-4 z-40 left-4 w-12 h-12 rounded-full bg-gradient-to-br from-[#C0C0C0] to-[#FFD700] 
+                    className="absolute top-4 z-40 left-4 w-12 h-12 rounded-2xl bg-gradient-to-br from-[#A35EA0] to-[#D2A8D6] 
                     flex items-center justify-center"
                 >
                     <svg width={23} height={18} viewBox="0 0 23 18">
@@ -90,7 +93,7 @@ export default function NavBar() {
                     </svg>
                 </button>
                 <nav
-                    className={`fixed top-0 left-0 h-full w-72 z-30 flex items-center bg-gradient-to-br from-[#ffc107] to-[#ff18b8] transform ${
+                    className={`fixed top-0 left-0 h-full w-72 z-30 flex items-center bg-gradient-to-br from-[#F7A1B2] to-[#D2A8D6] transform ${
                         isOpen ? "translate-x-0" : "-translate-x-full"
                     } transition-transform duration-300`}
                 >
