@@ -74,6 +74,6 @@ export default function NavBar() {
     ]
 
     return(
-        <div>NavBar</div>
+        <div className="relative flex justify-between"></div>
     )
 }
