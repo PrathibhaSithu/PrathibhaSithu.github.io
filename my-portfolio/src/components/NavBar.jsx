@@ -111,7 +111,7 @@ export default function NavBar() {
                     </ul>
                 </nav>
             </div>
-            <h1 className="font-bold text-2xl text-white top-8 right-8 p-8 lg:pr-16">
+            <h1 className="font-bold text-2xl text-[#0a0a0a] top-8 right-8 p-8 lg:pr-16">
                 Prathibha Sithumini
             </h1>
         </div>
