@@ -14,6 +14,9 @@ export default function MainBackground() {
 
     useEffect(() => {
         const scene = new THREE.Scene();
+
+        scene.background = new THREE.Color('#f4e1e6');
+
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer({ alpha: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -55,15 +58,15 @@ export default function MainBackground() {
         }
 
         // Add a glass-like plane in front of the flowers
-        const glassGeometry = new THREE.PlaneGeometry(40, 20); // Adjust size to cover the screen
-        const glassMaterial = new THREE.MeshBasicMaterial({
-            color: 0xffffff,
-            transparent: true,
-            opacity: 0.01, // Semi-transparent
-        });
-        const glassPlane = new THREE.Mesh(glassGeometry, glassMaterial);
-        glassPlane.position.z = -1; // Place it slightly in front of the flowers
-        scene.add(glassPlane);
+        // const glassGeometry = new THREE.PlaneGeometry(40, 20); // Adjust size to cover the screen
+        // const glassMaterial = new THREE.MeshBasicMaterial({
+        //     color: 0xffffff,
+        //     transparent: true,
+        //     opacity: 0.01, // Semi-transparent
+        // });
+        // const glassPlane = new THREE.Mesh(glassGeometry, glassMaterial);
+        // glassPlane.position.z = -1; // Place it slightly in front of the flowers
+        // scene.add(glassPlane);
 
         // Set up post-processing
         const composer = new EffectComposer(renderer);
