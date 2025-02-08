@@ -24,21 +24,23 @@ function HeroSection() {
                   Prathibha
                 </span>
               </h1>
+              <h2 className="mt-2 text-2xl text-[#720c61]"> Frontend Developer</h2>
             </header>
             <p className="text-[#fff] pt-8 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
-              cumque architecto non molestiae voluptate doloribus! Pariatur
-              provident blanditiis necessitatibus. Explicabo vitae iusto libero
-              qui animi! Vel eaque odio voluptatem iste!
+              Currently following a Bsc. degree in Information Technology at SLIIT, I’m also gaining hands-on experience as an intern at ITMD, Ministry of Finance, Sri Lanka, 
+              where I work on real-world projects that sharpen my technical and problem-solving skills.
+              I specialize in design intuitive, visually appealing interfaces with a strong eye for detail and a commitment to delivering high-quality digital products.
+              I hope to grow into a full-stack developer, bridging the gap between design and development to build impactful applications.
             </p>
-            <section className="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
+            <h2 className="mt-[10px] text-[#fff] text-2xl"> Let’s connect and create something amazing together!</h2>
+            <section className="flex items-center gap-3 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
               <figure className="w-56">
                 <InteractiveButton text="Hire Me" />
               </figure>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 className="flex items-center px-4 py-2 bg-transparent font-bold text-[#fff] border-3 border-[#fff]
-                    bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 rounded-3xl"
+                    transition-all duration-100 ease-in-out group hover:bg-gradient-to-br from-pink-400 via-pink-500 to-pink-600 rounded-3xl"
               >
                 <svg viewBox="0 0 24 24" width={40} height={40} fill="none">
                   <motion.path
