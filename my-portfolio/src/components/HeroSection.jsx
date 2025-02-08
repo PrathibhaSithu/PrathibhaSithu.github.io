@@ -26,7 +26,11 @@ function HeroSection() {
               </h1>
             </header>
             <p className="text-[#fff] pt-8 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
-              
+            I am Prathibha Sithumini an IT undergraduate student in SLIIT.
+                        As an undergraduate student passionate about technology, dedicated to learning and exploring diverse facets of software development.
+                        With a keen interest in mobile app development, I've honed my skills in Java, Kotlin and Android Studio, crafting intuitive applications such as an expense 
+                        management tool using Firebase.<br/>
+                        I'm excited to share my journey and contribute my skills to you with my portfolio. Let's connect and explore opportunities together! 
             </p>
             <section className="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
               <figure className="w-56">
