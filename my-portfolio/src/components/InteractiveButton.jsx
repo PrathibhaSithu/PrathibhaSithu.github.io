@@ -53,7 +53,9 @@ const CustomButton = ({ text }) => {
         onMouseEnter={scramble}
         onMouseLeave={stopScramble}
         >
-        {displayText}
+          <span className="absolute inset-0 w-full h-full bg-[#ff5c72] rounded-lg transform scale-0
+          transition-transform duration-300 ease-out group-hover:scale-100"></span>
+        <span className="relative z-10">{displayText}</span>
         </motion.button>
     );
 };
