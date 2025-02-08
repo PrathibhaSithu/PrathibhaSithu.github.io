@@ -46,7 +46,8 @@ const CustomButton = ({ text }) => {
 
     return (
         <motion.button
-        className="w-full px-8 text-lg font-bold text-white rounded-lg overflow-hidden relative bg-gradient-to-r from-blue-500 to-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white"
+        className="w-full px-8 text-lg font-bold text-white rounded-lg overflow-hidden relative 
+        bg-gradient-to-r from-blue-500 to-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white"
         // whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         onMouseEnter={scramble}
