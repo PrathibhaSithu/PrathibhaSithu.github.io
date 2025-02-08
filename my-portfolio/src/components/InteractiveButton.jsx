@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const CYCLE_PER_LETTER = 2;
 const SHUFFLE_TIME = 50;
 const CHARS = "!@#$%^&*():{};|,<>/?";
+const COLORS = ["bg-red-500", "bg-blue-500", "bg-green-500"];
 
 export default function InteractiveButton({ text }) {
   return (
@@ -26,9 +27,8 @@ const CustomButton = ({ text }) => {
           if (pos / CYCLE_PER_LETTER > index) {
             return char;
           }
-          const randomCharIndex = Math.floor(Math.random() * CHARS.length);
-          const randomChar = CHARS[randomCharIndex];
-          return randomChar;
+          const randomCharIndex = Math.floor(Math.random() * CHARS.length); 
+          return CHARS[randomCharIndex];;
         })
         .join("");
 
