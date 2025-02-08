@@ -40,7 +40,7 @@ function HeroSection() {
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 className="flex items-center px-4 py-2 bg-transparent font-bold text-[#fff] border-3 border-[#fff]
-                    bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 rounded-3xl"
+                    transition-all duration-100 ease-in-out group hover:bg-gradient-to-br from-pink-400 via-pink-500 to-pink-600 rounded-3xl"
               >
                 <svg viewBox="0 0 24 24" width={40} height={40} fill="none">
                   <motion.path
