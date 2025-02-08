@@ -24,19 +24,16 @@ function HeroSection() {
                   Prathibha
                 </span>
               </h1>
+              <h2 className="mt-2 text-2xl text-[#720c61]"> Frontend Developer</h2>
             </header>
             <p className="text-[#fff] pt-8 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
-              I am an 4th year IT undergraduate student in SLIIT. I am a passionate about technology, dedicated to
-              learning and exploring diverse facets of software development.
-              With a keen interest in mobile app development, I've honed my
-              skills in Java, Kotlin and Android Studio, crafting intuitive
-              applications such as an expense management tool using Firebase.
-              <br />
-              I'm excited to share my journey and contribute my skills to you
-              with my portfolio. Let's connect and explore opportunities
-              together!
+              Currently following a Bsc. degree in Information Technology at SLIIT, I’m also gaining hands-on experience as an intern at ITMD, Ministry of Finance, Sri Lanka, 
+              where I work on real-world projects that sharpen my technical and problem-solving skills.
+              I specialize in design intuitive, visually appealing interfaces with a strong eye for detail and a commitment to delivering high-quality digital products.
+              I hope to grow into a full-stack developer, bridging the gap between design and development to build impactful applications.
             </p>
-            <section className="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
+            <h2 className="mt-[10px] text-[#fff] text-2xl"> Let’s connect and create something amazing together!</h2>
+            <section className="flex items-center gap-3 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
               <figure className="w-56">
                 <InteractiveButton text="Hire Me" />
               </figure>
