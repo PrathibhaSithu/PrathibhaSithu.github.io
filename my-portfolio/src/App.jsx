@@ -1,18 +1,18 @@
 import HeroSection from "./components/HeroSection";
-// import MainBackground from "./components/MainBackground";
+import MainBackground from "./components/MainBackground";
 import NavBar from "./components/NavBar";
 
 function App() {
 
   return (
     <>
-    <div className="bg-[#b1548a]">
+    {/* <div className="bg-[#b1548a]">
       <NavBar/>
       <HeroSection/>
-    </div>
-      {/* <MainBackground/>
+    </div> */}
+      <MainBackground/>
       <NavBar/>
-      <HeroSection/> */}
+      <HeroSection/>
       
     </>
   );
