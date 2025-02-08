@@ -26,10 +26,7 @@ function HeroSection() {
               </h1>
             </header>
             <p className="text-[#fff] pt-8 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
-              cumque architecto non molestiae voluptate doloribus! Pariatur
-              provident blanditiis necessitatibus. Explicabo vitae iusto libero
-              qui animi! Vel eaque odio voluptatem iste!
+              
             </p>
             <section className="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
               <figure className="w-56">
