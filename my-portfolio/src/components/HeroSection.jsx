@@ -26,8 +26,7 @@ function HeroSection() {
               </h1>
             </header>
             <p className="text-[#fff] pt-8 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
-              I am Prathibha Sithumini an IT undergraduate student in SLIIT. As
-              an undergraduate student passionate about technology, dedicated to
+              I am an 4th year IT undergraduate student in SLIIT. I am a passionate about technology, dedicated to
               learning and exploring diverse facets of software development.
               With a keen interest in mobile app development, I've honed my
               skills in Java, Kotlin and Android Studio, crafting intuitive
