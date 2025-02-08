@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 const CYCLE_PER_LETTER = 2;
 const SHUFFLE_TIME = 50;
 const CHARS = "!@#$%^&*():{};|,<>/?";
-const COLORS = ["bg-red-500", "bg-blue-500", "bg-green-500"];
 
 export default function InteractiveButton({ text }) {
   return (
@@ -21,16 +20,14 @@ const CustomButton = ({ text }) => {
   const scramble = () => {
     let pos = 0;
     intervalRef.current = setInterval(() => {
-      const scrambled = text
-        .split("")
-        .map((char, index) => {
+      const scrambled = text.split("").map((char, index) => {
           if (pos / CYCLE_PER_LETTER > index) {
             return char;
           }
           const randomCharIndex = Math.floor(Math.random() * CHARS.length); 
-          return CHARS[randomCharIndex];;
-        })
-        .join("");
+          const randomChar = CHARS[randomCharIndex];
+          return randomChar;
+        }).join("");
 
       setDisplayText(scrambled);
       pos++;
@@ -50,12 +47,12 @@ const CustomButton = ({ text }) => {
       whileTap={{ scale: 0.95 }}
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
-      className="w-full px-8 text-lg font-bold text-white rounded-lg overflow-hidden relative 
+      className="w-full px-8 py-4 text-lg font-bold text-white rounded-lg overflow-hidden relative group 
         bg-pink-900"
       // whileHover={{ scale: 1.1 }}
     >
       <span
-        className="absolute inset-0 w-full h-full bg-[#ff5c72] rounded-lg transform scale-0
+        className="absolute inset-0 w-full h-full bg-[#f789aa] rounded-lg transform scale-0
           transition-transform duration-300 ease-out group-hover:scale-100"
       ></span>
       <span className="relative z-10">{displayText}</span>
