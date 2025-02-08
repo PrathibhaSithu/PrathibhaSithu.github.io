@@ -52,8 +52,8 @@ const CustomButton = ({ text }) => {
       // whileHover={{ scale: 1.1 }}
     >
       <span
-        className="absolute inset-0 w-full h-full bg-[#f789aa] rounded-lg transform scale-0
-          transition-transform duration-300 ease-out group-hover:scale-100"
+        className="absolute inset-0 w-full h-full bg-[#f8608d] rounded-lg transform scale-0
+          transition-transform duration-200 ease-out group-hover:scale-100"
       ></span>
       <span className="relative z-10">{displayText}</span>
     </motion.button>
