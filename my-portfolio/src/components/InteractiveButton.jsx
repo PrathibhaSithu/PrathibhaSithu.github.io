@@ -10,7 +10,7 @@ export default function InteractiveButton({ text }) {
     <div className="flex justify-center items-center min-h-[200px] p-4">
       <CustomButton text={text} />
     </div>
-  )
+  );
 }
 
 const CustomButton = ({ text }) => {
@@ -39,6 +39,7 @@ const CustomButton = ({ text }) => {
       }
     }, SHUFFLE_TIME);
   };
+
   const stopScramble = () => {
     clearInterval(intervalRef.current || undefined);
     setDisplayText(text);
@@ -50,7 +51,7 @@ const CustomButton = ({ text }) => {
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
       className="w-full px-8 text-lg font-bold text-white rounded-lg overflow-hidden relative 
-        bg-gradient-to-r from-pink-900 to-pink-700"
+        bg-pink-900"
       // whileHover={{ scale: 1.1 }}
     >
       <span
