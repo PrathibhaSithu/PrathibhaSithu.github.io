@@ -1,6 +1,7 @@
 // import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { variants } from "./data/config";
+import InteractiveButton from "../components/InteractiveButton";
 
 function HeroSection() {
   return (
@@ -32,7 +33,7 @@ function HeroSection() {
             </p>
             <section className="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
               <figure className="w-56">
-                <button className="text-[#F4E1E6] font-medium">Hire Me</button>
+                <InteractiveButton text="Hire Me" />
               </figure>
               <motion.button
                 whileHover={{ scale: 1.1 }}
