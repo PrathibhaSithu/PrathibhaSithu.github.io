@@ -23,7 +23,6 @@ export default function SocialButton() {
         scale: 1.1,
         transition: {
           duration: 0.3,
-          ease: "easeOut",
         },
     }
     }
