@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import socialIcons from "./data/config";
 
 export default function SocialButton() {
   const animationDuration = 4;
@@ -29,6 +30,11 @@ export default function SocialButton() {
 };
 
   return (
-    <div>SocialButton</div>
+    <div className="md:flex flex-col items-center justify-center border border-[#720c61] bg-[#ffffff29] 
+    rounded-3xl space-y-11 p-3 max-h-[506px] md:max-h-[386px] hidden">
+      {socialIcons.map((icon) => (
+        <button key={icon.id}></button>
+      ))}
+    </div>
 )
 }
