@@ -38,8 +38,8 @@ export default function SocialButton() {
           <svg viewBox={icon.viewBox} width={40} height={40}>
             <motion.path
               d={icon.path}
-              fill="#861043"
-              stroke="#861043"
+              fill="#f2f2f2"
+              stroke="#f2f2f2"
               strokeWidth={1}
               variants={variants}
               initial="initial"
