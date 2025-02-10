@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-import socialIcons from "./data/config";
+import { easeInOut, motion } from "framer-motion";
+import { socialIcons } from "./data/config";
+
 
 export default function SocialButton() {
   const animationDuration = 4;
@@ -20,13 +20,13 @@ export default function SocialButton() {
           delay: animationDuration,
         },
       },
+    },
       hover: {
         scale: 1.1,
         transition: {
           duration: 0.3,
         },
       },
-    },
   };
 
   return (
