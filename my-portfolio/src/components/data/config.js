@@ -45,3 +45,30 @@ export const socialIcons = [
 ]
 
 // Numbers Section
+
+export const Numbers = [
+  {id:1, number: 50, title: 'Created Projects'},
+  {id:2, number: 30, title: 'UI/UX Projects'},
+  {id:3, number: 1, title: 'Experience'},
+  {id:4, number: 1, title: 'Worked Companies'},
+]
+
+// Services Section
+
+export const services = [
+  {
+    id: 1,
+    title: 'Web Development',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor'
+  },
+  {
+    id: 2,
+    title: 'UI / UX Design',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor'
+  },
+  {
+    id: 3,
+    title: 'Mobile Application Development',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor'
+  },
+];
