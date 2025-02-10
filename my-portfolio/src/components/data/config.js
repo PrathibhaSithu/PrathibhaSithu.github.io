@@ -45,3 +45,10 @@ export const socialIcons = [
 ]
 
 // Numbers Section
+
+export const Numbers = [
+  {id:1, number: 12, title: 'Created Projects'},
+  {id:2, number: 200, title: 'Projects'},
+  {id:3, number: 120, title: 'Clients'},
+  {id:4, number: 5, title: 'Years'},
+]
