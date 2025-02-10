@@ -1,7 +1,6 @@
 import { easeInOut, motion } from "framer-motion";
 import { socialIcons } from "./data/config";
 
-
 export default function SocialButton() {
   const animationDuration = 4;
   const variants = {
@@ -21,12 +20,12 @@ export default function SocialButton() {
         },
       },
     },
-      hover: {
-        scale: 1.1,
-        transition: {
-          duration: 0.3,
-        },
+    hover: {
+      scale: 1.1,
+      transition: {
+        duration: 0.3,
       },
+    },
   };
 
   return (
@@ -39,8 +38,8 @@ export default function SocialButton() {
           <svg viewBox={icon.viewBox} width={40} height={40}>
             <motion.path
               d={icon.path}
-              fill="#ffc107"
-              stroke="#ffc107"
+              fill="#D2A8D6"
+              stroke="#D2A8D6"
               strokeWidth={1}
               variants={variants}
               initial="initial"
