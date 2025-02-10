@@ -1,5 +1,6 @@
 import { easeInOut } from "framer-motion";
 
+// Hero Section
 const animationDuration = 2;
 export const variants = {
   initial: { pathLength: 0, strokeOpacity: 1, fillOpacity: 0 },
@@ -42,3 +43,5 @@ export const socialIcons = [
     viewBox: "0 0 24 24"
   },  
 ]
+
+// Numbers Section
