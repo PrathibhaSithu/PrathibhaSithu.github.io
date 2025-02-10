@@ -88,7 +88,7 @@ function HeroSection() {
             }}
             >
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 blur-3xl opacity-60 h-full w-full ">
-                
+                <img src="../assets/ppic.jpg" alt="ppic" />
               </div>
             </motion.div>
           </figure>
