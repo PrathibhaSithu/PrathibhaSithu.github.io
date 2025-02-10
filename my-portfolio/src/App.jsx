@@ -1,5 +1,5 @@
 import HeroSection from "./components/HeroSection";
-import MainBackground from "./components/MainBackground";
+// import MainBackground from "./components/MainBackground";
 import NavBar from "./components/NavBar";
 import NumbersSection from "./components/NumbersSection";
 

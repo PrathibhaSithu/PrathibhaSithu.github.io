@@ -88,7 +88,7 @@ function HeroSection() {
                 <img
                   src="../../public/assets/imgs/ppic.jpg"
                   alt="ppic"
-                  className="relative z-10 rounded-full max-h-full shadow-2xl transform transition-transform duration-75 ease-in-out hover:scale-110 "
+                  className="relative z-10 rounded-full max-h-full shadow-2xl hover:scale-110 "
                 />
             </motion.div>
           </figure>
