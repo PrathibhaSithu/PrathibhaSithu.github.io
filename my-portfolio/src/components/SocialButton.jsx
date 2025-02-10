@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import socialIcons from "./data/config";
 
 export default function SocialButton() {
   const animationDuration = 4;
@@ -23,13 +24,32 @@ export default function SocialButton() {
         scale: 1.1,
         transition: {
           duration: 0.3,
-          ease: "easeOut",
         },
-    }
-    }
-};
+      },
+    },
+  };
 
   return (
-    <div>SocialButton</div>
-)
+    <div
+      className="md:flex flex-col items-center justify-center border border-[#720c61] bg-[#ffffff29] 
+    rounded-3xl space-y-11 p-3 max-h-[506px] md:max-h-[386px] hidden"
+    >
+      {socialIcons.map((icon) => (
+        <button key={icon.id}>
+          <svg viewBox={icon.viewBox} width={40} height={40}>
+            <motion.path
+              d={icon.path}
+              fill="#ffc107"
+              stroke="#ffc107"
+              strokeWidth={1}
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              whileHover="hover"
+            />
+          </svg>
+        </button>
+      ))}
+    </div>
+  );
 }

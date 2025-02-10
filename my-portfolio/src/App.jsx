@@ -6,13 +6,13 @@ function App() {
 
   return (
     <>
-    {/* <div className="bg-[#b1548a]">
+    <div className="bg-[#b1548a]">
       <NavBar/>
       <HeroSection/>
-    </div> */}
-      <MainBackground/>
+    </div>
+      {/* <MainBackground/>
       <NavBar/>
-      <HeroSection/>
+      <HeroSection/> */}
       
     </>
   );
