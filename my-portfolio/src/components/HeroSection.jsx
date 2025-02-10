@@ -16,8 +16,8 @@ function HeroSection() {
                 via-[#785ae4] to-[#A35EA0] opacity-20 blur-[100px] right-10 bottom-0 hidden md:block"
       ></header>
       <section className="w-full px-5 sm:px-8 md:px-12 lg:px-0 max-w-screen-lg lg:max-w-screen-xl mx-auto relative">
-        <article className="grid lg:grid-cols-2 gap-10 xl:gap-6 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
-          <section className="lg py-6 flex justify-between">
+        <article className="grid lg:grid-cols-2 gap-10 xl:gap-6 relative pt-18 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
+          <section className="lg flex justify-between">
             <SocialButton />
             <section className="ml-0 md:ml-12">
               <header className="text-center lg:text-left">
@@ -28,24 +28,21 @@ function HeroSection() {
                   </span>
                 </h1>
                 <h2 className="mt-2 text-2xl text-[#720c61]">
-                  {" "}
                   Frontend Developer
                 </h2>
               </header>
-              <p className="text-[#fff] pt-8 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
-                Currently following a Bsc. degree in Information Technology at
-                SLIIT, I’m also gaining hands-on experience as an intern at
-                ITMD, Ministry of Finance, Sri Lanka, where I work on real-world
-                projects that sharpen my technical and problem-solving skills. I
-                specialize in design intuitive, visually appealing interfaces
-                with a strong eye for detail and a commitment to delivering
-                high-quality digital products. I hope to grow into a full-stack
-                developer, bridging the gap between design and development to
-                build impactful applications.
+              <p className="text-[#fff] pt-6 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
+                As an intern at ITMD, Ministry of Finance, Sri Lanka, while
+                pursuing my bachelor’s in information technology at SLIIT, I
+                gain real-world experience that sharpens my technical and
+                problem-solving skills. Specialize in designing high-quality
+                digital products with an eye for detail and an eye for design.
+                By bridging the gap between design and development, I hope to
+                become a full-stack developer.
               </p>
-              <h2 className="mt-[10px] text-[#fff] text-2xl">
+              <h2 className="mt-[10px] text-[#ffb9d4] text-2xl">
                 {" "}
-                Let’s connect and create something amazing together!
+                Let’s collaborate and create something amazing!
               </h2>
               <section className="flex items-center gap-3 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
                 <figure className="w-56">
@@ -74,21 +71,25 @@ function HeroSection() {
           </section>
           <figure className="lg:h-full md:flex md:justify-end mt-20 md:mt-0">
             <motion.div
-            className="w-[350px] h-[350px] md:w-[400px] md:h-[400px] flex justify-center items-center p-3 rounded-full overflow-hidden relative"
-            animate = {{
-              backgroundColor: ['#A35EA0', '#F7A1B2', '#ff6667' ],
-              scale: [1, 1.1, 1],
-              rotate: [1, 5, 5, 1],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'easeInOut',
-              repeat: Infinity,
-              repeatType: 'reverse'
-            }}
+              className="w-[350px] h-[350px] md:w-[400px] md:h-[400px] flex justify-center items-center p-3 rounded-full overflow-hidden relative"
+              animate={{
+                backgroundColor: ["#A35EA0", "#F7A1B2", "#ff6667"],
+                scale: [1, 1.1, 1],
+                rotate: [1, 5, 5, 1],
+              }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
             >
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 blur-3xl opacity-60 h-full w-full ">
-                <img src="../assets/ppic.jpg" alt="ppic" />
+                <img
+                  src="../assets/ppic.jpg"
+                  alt="ppic"
+                  className="relative z-10 rounded-full max-h-full shadow-2xl transform "
+                />
               </div>
             </motion.div>
           </figure>
