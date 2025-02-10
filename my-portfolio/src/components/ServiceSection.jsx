@@ -26,8 +26,16 @@ export default function ServiceSection() {
             className="relative w-full h-[350px] p-5 grid place-items-center overflow-hidden rounded-[20px] shadow-lg"
             >
                 <section className="absolute w-[95%] h-[95%] bg-black rounded-[20px] z-10 text-center text-white">
-                    <header className="border borde-pink-800 bg-[#ffffff29] rounded-xl p-3 mb-6 min-h-full min-w-full"></header>
+                    <header className="border borde-pink-800 bg-[#ffffff29] rounded-xl p-3 mb-6 min-h-full min-w-full flex items-center">
+                        <section className="mt-4 space-y-4 px-2">
+                            <h2 className="uppercase text-lg md:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-br from-[#ffb9d4] to-[#F6C6D7]">
+                                {item.title}
+                            </h2>
+                            <p className="md:text-lg text-white opacity-80 "></p>
+                        </section>
+                    </header>
                 </section>
+                <section className="absolute w-full h-[105%] bg-gradient-to-br from-[#ffb9d4] to-[#F6C6D7] animate-spin-slow opacity-60 animation-[spin 5s linear infinite] "></section>
             </motion.article>
         ))}
       </section>
