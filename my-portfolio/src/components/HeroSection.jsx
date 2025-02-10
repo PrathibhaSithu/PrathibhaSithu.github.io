@@ -84,13 +84,12 @@ function HeroSection() {
                 repeatType: "reverse",
               }}
             >
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 blur-3xl opacity-60 h-full w-full ">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 blur-3xl opacity-60 h-full w-full "/>
                 <img
-                  src="../assets/ppic.jpg"
+                  src="../../public/assets/imgs/ppic.jpg"
                   alt="ppic"
-                  className="relative z-10 rounded-full max-h-full shadow-2xl transform transition-transform duration-500 ease-in-out hover:scale-110 "
+                  className="relative z-10 rounded-full max-h-full shadow-2xl transform transition-transform duration-100 ease-in-out hover:scale-110 "
                 />
-              </div>
             </motion.div>
           </figure>
         </article>
