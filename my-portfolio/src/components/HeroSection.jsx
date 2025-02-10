@@ -17,7 +17,7 @@ function HeroSection() {
       ></header>
       <section className="w-full px-5 sm:px-8 md:px-12 lg:px-0 max-w-screen-lg lg:max-w-screen-xl mx-auto relative">
         <article className="grid lg:grid-cols-2 gap-10 xl:gap-6 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
-          <SocialButton/>
+          <SocialButton />
           <section className="ml-0 md:ml-12">
             <header className="text-center lg:text-left">
               <h1 className="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
@@ -26,15 +26,26 @@ function HeroSection() {
                   Prathibha
                 </span>
               </h1>
-              <h2 className="mt-2 text-2xl text-[#720c61]"> Frontend Developer</h2>
+              <h2 className="mt-2 text-2xl text-[#720c61]">
+                {" "}
+                Frontend Developer
+              </h2>
             </header>
             <p className="text-[#fff] pt-8 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
-              Currently following a Bsc. degree in Information Technology at SLIIT, I’m also gaining hands-on experience as an intern at ITMD, Ministry of Finance, Sri Lanka, 
-              where I work on real-world projects that sharpen my technical and problem-solving skills.
-              I specialize in design intuitive, visually appealing interfaces with a strong eye for detail and a commitment to delivering high-quality digital products.
-              I hope to grow into a full-stack developer, bridging the gap between design and development to build impactful applications.
+              Currently following a Bsc. degree in Information Technology at
+              SLIIT, I’m also gaining hands-on experience as an intern at ITMD,
+              Ministry of Finance, Sri Lanka, where I work on real-world
+              projects that sharpen my technical and problem-solving skills. I
+              specialize in design intuitive, visually appealing interfaces with
+              a strong eye for detail and a commitment to delivering
+              high-quality digital products. I hope to grow into a full-stack
+              developer, bridging the gap between design and development to
+              build impactful applications.
             </p>
-            <h2 className="mt-[10px] text-[#fff] text-2xl"> Let’s connect and create something amazing together!</h2>
+            <h2 className="mt-[10px] text-[#fff] text-2xl">
+              {" "}
+              Let’s connect and create something amazing together!
+            </h2>
             <section className="flex items-center gap-3 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
               <figure className="w-56">
                 <InteractiveButton text="Hire Me" />
