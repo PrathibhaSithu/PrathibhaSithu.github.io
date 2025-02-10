@@ -1,4 +1,4 @@
-import Typed from "react-typed";
+import Typed from "react-typed/dist/ReactTyped";
 
 export default function TypingEffect() {
   return (

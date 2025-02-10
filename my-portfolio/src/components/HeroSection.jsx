@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { variants } from "./data/config";
 import InteractiveButton from "../components/InteractiveButton";
 import SocialButton from "../components/SocialButton";
+import TypingEffect from "./TypingEffect";
 
 function HeroSection() {
   return (
@@ -27,9 +28,12 @@ function HeroSection() {
                     Prathibha
                   </span>
                 </h1>
-                <h2 className="mt-2 text-2xl text-[#720c61]">
+                {/* <h2 className="mt-2 text-2xl text-[#720c61]">
                   Frontend Developer
-                </h2>
+                </h2> */}
+                <div>
+                  <TypingEffect />
+                </div>
               </header>
               <p className="text-[#fff] pt-6 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl">
                 As an intern at ITMD, Ministry of Finance, Sri Lanka, while
