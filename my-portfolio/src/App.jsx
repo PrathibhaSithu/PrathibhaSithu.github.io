@@ -7,15 +7,15 @@ function App() {
 
   return (
     <>
-    {/* <div className="bg-[#b1548a]">
+    <div className="bg-[#b1548a]">
       <NavBar/>
       <HeroSection/>
       <NumbersSection/>
-    </div> */}
-      <MainBackground/>
+    </div>
+      {/* <MainBackground/>
       <NavBar/>
       <HeroSection/>
-      <NumbersSection/>
+      <NumbersSection/> */}
       
     </>
   );

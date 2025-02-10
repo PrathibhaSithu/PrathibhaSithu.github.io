@@ -45,7 +45,7 @@ export default function NumbersSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.5 }}
-        className="relative z-1 mx-auto w-11/12 lg:mx-0 p-5 sm:py-8 rounded-3xl border-[#a648a2] bg-[#ffffff29] shadow-lg *:
+        className="relative z-1 mx-auto w-11/12 lg:mx-0 p-5 sm:py-8 rounded-3xl border-2 border-[#ab2b78] bg-[#ffffff29] shadow-lg *:
       md:divide-x divide-[#a648a2] grid grid-cols-2 md:grid-cols-4 gap-4 dm:gap-8 md-gap-6 lg:gap-12"
       >
         {Numbers.map((item) => (
