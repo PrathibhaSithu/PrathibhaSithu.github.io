@@ -23,14 +23,14 @@ export default function SocialButton() {
     hover: {
       scale: 1.1,
       transition: {
-        duration: 0.3,
+        duration: 0.5,
       },
     },
   };
 
   return (
     <div
-      className="md:flex flex-col items-center justify-center border border-[#720c61] bg-[#ffffff29] 
+      className="md:flex flex-col items-center justify-center border border-pink-900 bg-[#e1e1e129] 
     rounded-3xl space-y-11 p-3 max-h-[506px] md:max-h-[386px] hidden"
     >
       {socialIcons.map((icon) => (
@@ -38,8 +38,8 @@ export default function SocialButton() {
           <svg viewBox={icon.viewBox} width={40} height={40}>
             <motion.path
               d={icon.path}
-              fill="#f2f2f2"
-              stroke="#f2f2f2"
+              fill="#e6e6e6"
+              stroke="#e6e6e6"
               strokeWidth={1}
               variants={variants}
               initial="initial"
