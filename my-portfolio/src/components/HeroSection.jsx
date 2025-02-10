@@ -72,6 +72,26 @@ function HeroSection() {
               </section>
             </section>
           </section>
+          <figure className="lg:h-full md:flex md:justify-end mt-20 md:mt-0">
+            <motion.div
+            className="w-[350px] h-[350px] md:w-[400px] md:h-[400px] flex justify-center items-center p-3 rounded-full overflow-hidden relative"
+            animate = {{
+              backgroundColor: ['#A35EA0', '#F7A1B2', '#ff6667' ],
+              scale: [1, 1.1, 1],
+              rotate: [1, 5, 5, 1],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'easeInOut',
+              repeat: Infinity,
+              repeatType: 'reverse'
+            }}
+            >
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 blur-3xl opacity-60 h-full w-full ">
+                
+              </div>
+            </motion.div>
+          </figure>
         </article>
       </section>
     </section>
