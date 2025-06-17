@@ -77,12 +77,12 @@ function HeroSection() {
                 scale: [1, 1.1, 1],
                 rotate: [1, 5, 5, 1],
               }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "reverse",
-              }}
+              // transition={{
+              //   duration: 2,
+              //   ease: "easeInOut",
+              //   repeat: ,
+              //   repeatType: "reverse",
+              // }}
             >
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 blur-3xl opacity-60 h-full w-full "/>
                 <img
