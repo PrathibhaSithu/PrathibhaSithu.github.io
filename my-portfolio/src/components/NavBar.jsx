@@ -112,7 +112,7 @@ export default function NavBar() {
         </nav>
       </div>
       <h1 className="font-bold text-3xl text-[#fff] top-8 right-8 p-8 lg:pr-16">
-        Prathibha Sithumini
+        Prathibha
       </h1>
     </div>
   );
